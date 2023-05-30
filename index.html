@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="assets/css/reset.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="icon" type="imagen/icon" href="assets/img/favicon.ico">
+        <title>Alura Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <img src="assets/img/logo.png" alt=""/>
+        </header>
+        <main>
+            <section class="contenedores grid-item-1">
+                <textarea
+                    name="textoEntrada"
+                    id="textoEntrada"
+                    placeholder="Escribe tu texto aquí"
+                    ></textarea>
+                <div class="advertencia">
+                    <img src="assets/img/exclamation.png"/>
+                    Solo letras minúsculas y sin acentos
+                </div>
+                <div class="cajaBotones">
+                    <button id="btnEncriptar" class="botones"> Encriptar </button>
+                    <button id="btnDesencriptar" class="botones"> Desencriptar </button>
+                </div>
+            </section>
+            <section class="contenedores grid-item-2">
+                <img src="assets/img/muneco.png" width="200" alt="" id="muneco"/>
+                <h1 id="titulo"> Ningún mensaje fue encontrado </h1>
+                <p id="parrafo"> Ingresa el texto que desees encriptar o desencriptar. </p>
+                <textarea
+                    name="textoSalida"
+                    id="textoSalida"
+                    placeholder="Texto encriptado"
+                    class="hide"
+                    disabled
+                ></textarea>
+                <button id="btnCopiar" class="botones hide"> Copiar </button>
+            </section>
+        </main>
+        <footer>
+            <h1> Copyright &copy; </h1>
+            <h1> Alumno Alura </h1>
+            <div class="red-social">
+                <a href="https://github.com/">
+                    <img src="./assets/img/github.svg" alt=""/>
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="assets/img/linkedin.svg" alt=""/>
+                </a>
+            </div>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
